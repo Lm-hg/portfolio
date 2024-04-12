@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="./tics.css">
+</head>
+<body>
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+  <a href="./paper.html">Jouer à Pierre-Feuille-Ciseaux</a>
+  <div id="game">
+    <div class="cell" id="cell-0"></div>
+    <div class="cell" id="cell-1"></div>
+    <div class="cell" id="cell-2"></div>
+    <div class="cell" id="cell-3"></div>
+    <div class="cell" id="cell-4"></div>
+    <div class="cell" id="cell-5"></div>
+    <div class="cell" id="cell-6"></div>
+    <div class="cell" id="cell-7"></div>
+    <div class="cell" id="cell-8"></div>
+  </div>
+  <div id="result"></div>
+  <div id="score">
+    <p>Joueur: <span id="playerScore">0</span></p>
+    <p>Machine: <span id="computerScore">0</span></p>
+  </div>
+  <button id="reset">Rejouer</button>
+</div>
+<script src="./tac.js"></script>
+</body>
+</html>

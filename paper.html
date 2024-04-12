@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pierre-Feuille-Ciseaux</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Pierre-Feuille-Ciseaux</h1>
+  <a href="./tic.html">Jouer à TicTacToe</a>
+  <div id="score">
+    <p>Joueur à gauche: <span id="playerScore">0</span></p>
+    <p>Lissanou à droite: <span id="computerScore">0</span></p>
+  </div>
+  <div id="images">
+    <img src="blank.png" alt="Player Choice" id="playerChoice">
+    <img src="blank.png" alt="Computer Choice" id="computerChoice">
+  </div>
+  <div id="game">
+    <button class="choice" id="rock">Pierre</button>
+    <button class="choice" id="paper">Feuille</button>
+    <button class="choice" id="scissors">Ciseaux</button>
+  </div>
+  <div id="result"></div>
+
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./modestin.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">LMH</a>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Service">Compétences</a>
+            <a href="#port">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        
+        <div class="home-content">
+            <h1>Bonjour, je m'appelle Modestin Lissanou</h1>
+            <h3>Développeur web</h3>
+            <p>Développeur web passionné par la création d'expériences numériques uniques.</p>
+            <div class="btn-box">
+                <a href="#">Contactez-moi</a>
+                <a href="./CV.pdf" download="CV.pdf">CV</a>
+            </div>
+            <div class="home-sci">
+                <a href="https://linkedin.com/in/modestin"> <i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Lm-hg"> <i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        
+        
+            <img src="./modestin.jpg" alt="ma photo" class="moi">
+        <span class="home-imgHover"></span>
+        
+    </section>
+    <section id="about" class="home">
+        <img src="https://th.bing.com/th/id/OIP._tVKi8RH6raocLpP0eqcDwHaGQ?w=169&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+        <div class="home-content" >
+            <h1>About me</h1>
+            <p style="padding-left: 100px;">Je suis étudiant en première année de Bachelor en développement web à HETIC. Animé par une passion ardente pour le développement, je m'investis intensément dans l'acquisition des fondamentaux du développement web. Mon engagement inébranlable et mon désir constant de progresser illustrent ma détermination à exceller dans le domaine en constante évolution.</p>
+            
+        </div>
+    </section>
+    <section  id="Service">
+        <h1>Mes compétences</h1>
+        <div class="content">
+
+            <div class="home-content">
+    
+                <h3>Front</h3>
+                <p>Je suis capable de créer des interfaces utilisateurs attrayantes et dynamiques.</p>
+                <p>Mon expectise me permet d'optimiser l'expérience utilisateur en assurant une navigation fluide et une interactivité intuitive dans différentes plateformes et navigateurs.</p>
+                <p>Je suis compétent dans l'intégration précise de maquettes et de designs, garatissant que l'apparence finale correspond aux attentes du client ou du designer.</p>
+                <span id="detail" onclick="openModal('front')">Voir</span>
+            </div>
+            <div class="home-content">
+    
+                <h3>Back</h3>
+                <p>Je gère efficacement les données et les bases de données, j'assure la sécurité des informations et je développe des algorithmes pour le bon fonctionnement de l'application.</p>
+                <p>Je suis responsable de la sécurité des données, en mettant en oeuvre des mesures telles que l'authentification des utilisateurs et le chiffrement des données.</p>
+                <p>Je déploie l'application sur des serveurs , je m'assure que l'application est disponible et performante en tout temps.</p>
+                <span id="detail" onclick="openModal('back')">Voir</span>
+
+            </div>
+        </div>
+    </section>
+    <section class="homes" id="port">
+
+            <h1>PORTFOLIO</h1>
+            <div class="fadeInRight">
+    
+                <div class="project" onclick="openModal('project1')">
+                    <h3>Projet 1</h3>
+        
+                </div>
+                  <div class="project" onclick="openModal('project2')">
+                    <h3>Projet 2</h3>
+                  </div>
+                  <div class="project" onclick="openModal('project3')">
+                    <h3>Projet 3</h3>
+                  </div>
+                  <div class="project" onclick="openModal('project4')">
+                    <h3>Projet 4</h3>
+                  </div>
+                  <div class="project" onclick="openModal('project5')">
+                    <h3>Projet 5</h3>
+                  </div>
+                  <div class="project" onclick="openModal('project6')">
+                      <h3>Projet 6</h3>
+                    </div>
+            </div>
+    </section>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="project1">
+          <span class="close" onclick="closeModal('project1')">&times;</span>
+          <h2>IMADE</h2>
+          <p>Une plateforme qui permet de mettre en vente ses articles. Simple d'utilisateur, compte gratuit, accès à son tableau de bord pour l'ajout d'article. Pour ajouter un article, un paiement par carte de 1,5euro doit être effectué mais il est possible de faire un abonnement annuel de 50euros, qui permet d'ajouter autant d'articles qu'on le souhaite pendant 365jours.Les technologies utilisées:</p>
+          <ul>
+            <li>Le package Stripe</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>SQL</li>
+          </ul>
+          <a href="https://imade.lovestoblog.com">Imade</a>
+        </div>
+        <div class="modal-content" id="project2">
+          <span class="close" onclick="closeModal('project2')">&times;</span>
+          <h2>Imade</h2>
+          <p>Même projet que le premier à quelques exceptions près. La première plateforme est utilisable qu'en Europe. Pour permettre aux autres de profiter aussi des fonctionnalitées de la plateforme, une version disponible en Afrique a été créée. Ce qui permet un paiement avec la monnaie locale soit par carte, soit par mobile money très utilisé en Afrique de l'ouest.Les technologies utilisées:</p>
+          <ul>
+            <li>Le package kkiapay</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>SQL</li>
+          </ul>
+          <a href="https://imade.kesug.com">Imade</a>
+        </div>
+        <div class="modal-content" id="project3">
+          <span class="close" onclick="closeModal('project3')">&times;</span>
+          <h2>QrAmour</h2>
+          <p>Découvrez une toute autre façon d'utiliser les qr code.Exprimez votre amour en utilisant les qr amour. Sur la plateforme, transformez n'importe quel message d'amour en qr amour puis l'envoyez à votre partenaire. Un paiement unique de 0,50 euro est requis avant d'utiliser les fonctionnalitées de la platement. Et pour qu'elle soit accessible à tous, plusieurs formes de paiement ont été créées.Les technologies utilisées:</p>
+          <ul>
+            <li>Le package Stripe</li>
+            <li>Le package kkiapay</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>SQL</li>
+          </ul>
+          <p>Une version application est disponible malheureusement que sur Android</p>
+          <a href="https://qr.lovestoblog.com">QrAmour</a>
+        </div>
+        <div class="modal-content" id="project4">
+          <span class="close" onclick="closeModal('project4')">&times;</span>
+          <h2>VEGAN</h2>
+          <p>Vegan est un livre publié en Septembre 2023 par la maison d'édition Les Muses. Il raconte l'histoire de Végan, un orphelin n'ayant pas eu une vie des plus radieuses.Sa vie était un combat constant, jusqu’à ce qu’il fasse la rencontre de Marx, un compagnon d’infortune avec qui il partageait les épreuves et les rêves d’une vie meilleure.</p>
+    
+          <a href="https://www.laboutiqueafricavivre.com/film-reference/248755-vegan-9786204967837.html">VEGAN</a>
+        </div>
+        <div class="modal-content" id="project5">
+          <span class="close" onclick="closeModal('project5')">&times;</span>
+          <h2>Projet scolaire: NoTriche</h2>
+          <p>NoTriche est une extension chrome qui permet une fois activée, permet de détecter toute forme de tricheries et les stocke dans une base de données. Elle peut être utilisée dans le cadre d'un examen, et permettrait aux professeurs de détecter, tous les étudiants qui ont triché. Les technologies utilisées:</p>
+          <ul>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>Framework Express js</li>
+            <li>Framework Cors</li>
+            <li>Framework Supabase</li>
+            <li>Node js</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="modal-content" id="project6">
+            <span class="close" onclick="closeModal('project6')">&times;</span>
+            <h2>Projet 5</h2>
+            <a href="./paper.html">Jeux Populaires</a>
+          </div>  
+          <div class="modal-content" id="front">
+            <span class="close" onclick="closeModal('front')">&times;</span>
+            <h2>Mes compétences:</h2>
+            <ul>
+                <li>Langages:HTML,CSS, JavaScript</li>
+                <li>Framework: React.js, Angula</li>
+                <li>Conception d'interfaces utilisateur (UI)</li>
+                <li>Développement responsive et mobile</li>
+                <li>Manipulation du DOM</li>
+                <li>Intégration de maquettes et de designs</li>
+              </ul>          
+            </div> 
+            <div class="modal-content" id="back">
+                <span class="close" onclick="closeModal('back')">&times;</span>
+                <h2>Mes compétences:</h2>
+                <ul>
+                    <li>Langages:JavaScript(Node.js), Python,PHP</li>
+                    <li>Framework: Express.js, Django</li>
+                    <li>Base de données: MySql, PostgreSql</li>
+                    <li>Développement d'API RESTFul</li>
+                    <li>Sécurité web</li>
+                  </ul>          
+                </div>
+          <script>
+            
+  function openModal(projectId) {
+    var modal = document.getElementById('modal');
+    var projectModal = document.getElementById(projectId);
+    
+    var allModals = document.querySelectorAll('.modal-content');
+    allModals.forEach(function(modal) {
+      modal.style.display = 'none';
+    });
+  
+    modal.style.display = 'block';
+    projectModal.style.display = 'block';
+  }
+  
+  function closeModal() {
+    var modal = document.getElementById('modal');
+    
+    var allModals = document.querySelectorAll('.modal-content');
+    allModals.forEach(function(modal) {
+      modal.style.display = 'none';
+    });
+  
+    modal.style.display = 'none';
+  }
+  
+          </script>
+</body>
+</html>
