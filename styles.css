@@ -65,11 +65,20 @@ body{
     font-weight: 700;
     color: blue;
 }
+#detail{
+    color: blue;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+}
 .home-content p{
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
 
+}
+#detail {
+    cursor: pointer;
 }
 .home-content .btn-box{
     position: relative;
